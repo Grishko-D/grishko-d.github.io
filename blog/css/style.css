@@ -16,7 +16,8 @@ a{
 }
 
 .container{
-    width: 600px;
+    width: 500px;
     background: linear-gradient(#2d4d2a,#254023);
     padding: 10px 50px;
+    margin: 0 auto;
 }
