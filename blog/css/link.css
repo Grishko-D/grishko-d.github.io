@@ -1,0 +1,15 @@
+.menu {
+    margin-bottom: 30px;
+}
+
+.menu__link {
+    text-decoration: none;
+    margin-right: 30px;
+    color: #000;
+    font-size: 18px;
+    transition: 0.2;
+}
+
+.menu__link:hover {
+    color: #4f16b9;
+}
