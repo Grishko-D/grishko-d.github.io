@@ -40,7 +40,7 @@ a:hover{
     margin-bottom: 30px;
 }
 
-.menu__link {
+.menu__link{
     text-decoration: none;
     margin-right: 30px;
     color: #000;
@@ -48,10 +48,22 @@ a:hover{
     transition: 0.2;
     background: None;
 }
-
-.menu__link:hover {
+.menu__link:hover{
     color: #4f16b9;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.menu__selected{
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 18px;
+    transition: 0.2;
+    background: None;
+    color: #4f16b9;
+    background: rgba(0, 0, 0, 0.05);
+}
+.menu__selected:hover{
+    background: rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 576px){
