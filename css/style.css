@@ -105,3 +105,19 @@ a{
 .icon3{
     background-image: url("../img/icon3.png");
 }
+
+@media (max-width: 600px){
+    .text_div{
+        width: auto;
+        margin: 50px 0;
+        padding: 25px;
+    }
+    
+    .cont{
+        padding: 0;
+    }
+    
+    .icon{
+        margin: 0 25px;
+    }
+}
