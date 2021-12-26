@@ -52,7 +52,7 @@ html{
 }
 
 .text_div{
-    width: 600px;
+    width: 550px;
     margin: 70px auto;
     padding: 25px 60px;
     text-align: center;
@@ -106,7 +106,7 @@ a{
     background-image: url("../img/icon3.png");
 }
 
-@media (max-width: 600px){
+@media (max-width: 720px){
     .text_div{
         width: auto;
         margin: 50px 0;
@@ -119,5 +119,12 @@ a{
     
     .icon{
         margin: 0 25px;
+    }
+}
+
+@media (max-width: 500px){
+    .ava,.ava__border{
+        width: 230px;
+        height: 230px;
     }
 }
