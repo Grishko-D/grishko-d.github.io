@@ -26,6 +26,7 @@ html{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    transition: .5s;
 }
 
 .cont{
@@ -124,7 +125,21 @@ a{
 
 @media (max-width: 500px){
     .ava,.ava__border{
+        width: 270px;
+        height: 270px;
+    }
+    
+    body{
+        margin: 0;
+    }
+}
+
+@media (max-width: 400px){
+    .ava,.ava__border{
         width: 230px;
         height: 230px;
+    }
+    .icon{
+        margin: 0 17px;
     }
 }
