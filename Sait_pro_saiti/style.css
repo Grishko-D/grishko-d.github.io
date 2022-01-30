@@ -1,0 +1,119 @@
+@font-face{
+    font-family: 'Inconsolata';
+    src: url("fonts/Inconsolata-Bold.ttf");
+}
+@font-face{
+    font-family: 'Roboto';
+    src: url("fonts/Roboto-Regular.ttf");
+}
+
+body{
+    font-family: Inconsolata, Roboto;
+    background-color: #283e51;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 18px;
+    color: #0c141c;
+    margin: 0;
+}
+
+.main{
+    background: rgba(255, 255, 255, 0.85);
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    border-radius: 2px;
+    box-shadow: 0 0 40px 0;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+img{
+    margin: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #888;
+    border-width: 2px;
+}
+
+#img_css{
+    width: 500px;
+}
+
+.razdel{
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: inset 0 2px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.insert{
+    background: rgba(114, 246, 125, 0.5);
+    border-radius: 2px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.big{
+    font-size: 23px;
+}
+
+@media(max-width: 900px){
+    .main{
+        width: 700px;
+    }
+}
+
+@media(max-width: 800px){
+    .main{
+        width: 600px;
+        padding: 20px;
+    }
+    
+    img,#img_css{
+        width: 95%;
+        margin: 15px 2.5%;
+    }
+}
+
+@media(max-width: 700px){
+    body{
+        font-size: 17px;
+    }
+    .main{
+        width: auto;
+        margin: 15px;
+        padding: 10px;
+    }
+    .big{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 600px){
+    body{
+        font-size: 16px;
+    }
+    .big{
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 500px){
+    .main{
+        margin: 0;
+        padding: 5px;
+    }
+    .insert{
+        padding: 8px;
+    }
+    .razdel{
+        padding: 1px 15px;
+        margin: 8px 0;
+    }
+}
