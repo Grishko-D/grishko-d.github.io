@@ -1,0 +1,98 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: cursive;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+}
+
+#game {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #777;
+}
+
+#settings {
+    width: 70px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+#settings button {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px 10px 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px 2px #000;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    height: 35px;
+    width: 35px;
+    font-size: 24px;
+    font-family: cursive;
+    border-radius: 20%;
+    border: none;
+    box-shadow: 0 0 4px #000;
+}
+
+#ok_btn {
+    height: 50px;
+    width: 200px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    background-color: #00000000;
+    font-size: 24px;
+    font-family: cursive;
+}
+
+.val {
+    font-size: 20px;
+}
+
+.flip {
+    animation: flip 0.7s linear;
+}
+
+@keyframes flip {
+    0% {
+        transform: translateY(0px) rotateX(0deg);
+    }
+    25% {
+        transform: translateY(-5px) rotateX(90deg);
+    }
+    26% {
+        transform: translateY(-5px) rotateX(270deg);
+    }
+    50% {
+        transform: translateY(-10px) rotateX(360deg);
+    }
+    70% {
+        transform: translateY(0px) rotateX(360deg);
+    }
+    90% {
+        transform: scale(1.1) rotateX(360deg);
+    }
+    100% {
+        transform: scale(1.0) rotateX(360deg);
+    }
+}
