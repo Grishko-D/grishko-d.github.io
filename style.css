@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'pangolin';
+    src: url(fonts/Pangolin-Regular.ttf);
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: pangolin;
+    transition: 0.5s;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+}
+
+#game {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #777;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+#settings {
+    width: 70px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+#settings button {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px 10px 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px 2px #777;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    height: 35px;
+    width: 35px;
+    font-size: 24px;
+    font-family: pangolin;
+    border-radius: 20%;
+    border: none;
+    box-shadow: 0 0 4px #000;
+    background-position: center;
+    background-size: cover;
+}
+
+#ok_btn {
+    display: block;
+    height: 50px;
+    width: 150px;
+    margin: 15px auto;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: pangolin;
+    box-shadow: 0 0 20px #777;
+}
+
+.val {
+    font-size: 22px;
+}
+
+.flip {
+    animation: flip 0.7s linear;
+}
+
+@keyframes flip {
+    0% {
+        transform: translateY(0px) rotateX(0deg);
+    }
+    25% {
+        transform: translateY(-5px) rotateX(90deg);
+    }
+    26% {
+        transform: translateY(-5px) rotateX(270deg);
+    }
+    50% {
+        transform: translateY(-10px) rotateX(360deg);
+    }
+    70% {
+        transform: translateY(0px) rotateX(360deg);
+    }
+    90% {
+        transform: scale(1.1) rotateX(360deg);
+    }
+    100% {
+        transform: scale(1.0) rotateX(360deg);
+    }
+}
