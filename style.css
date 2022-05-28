@@ -1,4 +1,9 @@
 @font-face {
+    font-family: 'caveat';
+    src: url(fonts/Caveat-VariableFont_wght.ttf);
+}
+
+@font-face {
     font-family: 'pangolin';
     src: url(fonts/Pangolin-Regular.ttf);
 }
@@ -9,8 +14,8 @@ html {
 
 body {
     height: 100%;
-    font-family: pangolin;
-    transition: 0.5s;
+    font-family: caveat;
+    text-align: center;
 }
 
 #main {
@@ -18,19 +23,42 @@ body {
     justify-content: center;
 }
 
-#game {
-    width: 400px;
-    height: 400px;
-    display: flex;
+#time {
+    margin: 20px;
+    font-size: 40px;
     text-align: center;
-    flex-direction: column;
-    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+#game,
+#records_div {
     padding: 15px;
     border-radius: 20px;
     box-shadow: 0 0 20px #777;
+    text-align: center;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#records_div {
+    margin: 0 auto;
+    width: 450px;
+    margin-bottom: 30px;
 }
 
 h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+h2 {
     font-size: 35px;
 }
 
@@ -69,17 +97,34 @@ h1 {
 #ok_btn {
     display: block;
     height: 50px;
-    width: 150px;
+    width: 170px;
     margin: 15px auto;
     border: none;
     border-radius: 10px;
-    font-size: 24px;
-    font-family: pangolin;
+    font-size: 30px;
+    font-family: caveat;
+    box-shadow: 0 0 20px #777;
+}
+
+#back {
+    padding: 8px 15px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: caveat;
     box-shadow: 0 0 20px #777;
 }
 
 .val {
-    font-size: 22px;
+    font-size: 30px;
+}
+
+.show {
+    font-size: 40px;
+}
+
+.record {
+    font-size: 23px;
 }
 
 .flip {
