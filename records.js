@@ -66,8 +66,8 @@ function start() {
         return false;
     }
     window.oncontextmenu = f;
-    // window.onkeydown = f;
-    // window.onkeypress = f;
+    window.onkeydown = f;
+    window.onkeypress = f;
 
     generate()
     set_theme()
