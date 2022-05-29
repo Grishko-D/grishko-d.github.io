@@ -225,7 +225,7 @@ function generate(i, j) {
     time.innerHTML = 0.0;
     let rec;
     if (localStorage.getItem(`${lvl}_${size}`) == null) {
-        rec = ' / нет рекорда';
+        rec = ' / -';
     } else {
         rec = " / " + str_time(localStorage.getItem(`${lvl}_${size}`));
     }
