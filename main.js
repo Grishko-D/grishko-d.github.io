@@ -83,7 +83,6 @@ function flip(i, j, txt, teg, background) {
     setTimeout((btn, txt, background) => {
         btn.innerHTML = txt;
         btn.style.background = background;
-        btn.style.backgroundSize = '90%';
     }, 175, btn, txt, background);
     setTimeout((btn) => {
         btn.classList.remove("flip");
@@ -224,10 +223,20 @@ function generate(i, j) {
     is_generated = true;
     time_start = new Date();
     time.innerHTML = 0.0;
-    timer = setInterval(() => {
-        let d = (new Date() - time_start) / 1000;
-        time.innerHTML = `${Math.floor(d / 60)}:${Math.floor(d % 60 / 10)}${Math.floor(d % 10)}.${Math.floor(d % 1 * 10)}`;
-    }, 50);
+    let rec;
+    if (localStorage.getItem(`${lvl}_${size}`) == null) {
+        rec = ' / нет рекорда';
+    } else {
+        rec = " / " + str_time(localStorage.getItem(`${lvl}_${size}`));
+    }
+    timer = setInterval((rec) => {
+        let d = new Date() - time_start;
+        time.innerHTML = str_time(d / 1000) + rec;
+    }, 50, rec);
+}
+
+function str_time(t) {
+    return `${Math.floor(t / 60)}:${Math.floor(t % 60 / 10)}${Math.floor(t % 10)}.${Math.floor(t % 1 * 10)}`;
 }
 
 function new_game() {
